@@ -26,13 +26,11 @@ public class ParseIntegers {
                 sum += number;
             }
             catch (NumberFormatException e) {
-
-            }
-            finally {
-                sb.append(next);
                 sb.append(" ");
+                sb.append(next);
             }
         }
+        sb.append(".");
         sb.deleteCharAt(sb.length() - 1);
         System.out.println("Sum is " + sum);
         System.out.println("Just words:" + sb.toString());
